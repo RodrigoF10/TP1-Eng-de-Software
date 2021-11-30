@@ -16,10 +16,10 @@ Front-end: Python(Dash)
 
 História de usuário:
 
-•	Como usuário, gostaria de visualizar os dados sobre a COVID-19 de maneira intuitiva e fácil de compreender.
-•	Como usuário, gostaria de escolher como esses dados serão organizadas e apresentados na minha tela.
-•	Como usuário, gostaria de poder selecionar/filtrar informações específicas de acordo com a minha busca.
-•	Como usuário, gostaria de interagir com os elementos da apresentação sem nenhuma dificuldade.
+•	Como usuário, gostaria de visualizar os dados sobre a COVID-19 de maneira intuitiva e fácil de compreender;
+•	Como usuário, gostaria de escolher como esses dados serão organizadas e apresentados na minha tela;
+•	Como usuário, gostaria de poder selecionar/filtrar informações específicas de acordo com a minha busca;
+•	Como usuário, gostaria de interagir com os elementos da apresentação sem nenhuma dificuldade;
 •	Como usuário, espero que o painel de informações seja visualmente estruturado e interessante.
 
 Definição do projeto:
