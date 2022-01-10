@@ -11,19 +11,10 @@ import json
 
 CENTRO_LAT, CENTRO_LONG = -15.798298, -47.876145
 
-#Leitura do dataframe
-"""
-df = pd.read_csv("dataframe.csv", sep=";")
-df_estados = df[(~df["estado"].isna())&(df["codmun"].isna())]
-df_brasil = df[df["regiao"]=="Brasil"]
-
-df_estados.to_csv("df_estados.csv")
-df_brasil.to_csv("df_brasil.csv")
-"""
-
-df_estados = pd.read_csv("df_estados.csv")
-df_brasil = pd.read_csv("df_brasil.csv")
-
+#Leitura do Banco de Dados:
+con = mysql.connector.connect(host="localhost", database="bd_eng", user="root", password="")
+df_estados = pd.read_sql("SELECT * FROM df_estados", con)
+df_brasil = pd.read_sql("SELECT * FROM df_brasil", con)
 
 df_estados_ = df_estados[df_estados["data"]=="2021-03-13"]
 df_data = df_estados[df_estados["estado"]=="MG"]
