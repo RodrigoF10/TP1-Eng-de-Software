@@ -11,7 +11,7 @@ Escopo do trabalho:
 
 Tecnologias:
 Back-end: Python
-Banco de dados: SQLite
+Banco de dados: MySQL
 Front-end: Python(Dash)
 
 História de usuário:
