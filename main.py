@@ -63,7 +63,7 @@ app.layout = dbc.Container(
     dbc.Row([
         dbc.Col([
             html.Div([
-            html.Img(id="logo", src=app.get_asset_url("Poppy_wiki_3.png"), height=50),
+            html.Img(id="logo", src=app.get_asset_url("covid.png"), height=50),
             html.H5("Evolução do COVID-19"),
             dbc.Button("BRASIL", color="primary", id="location-button", size="lg")], style={}),
             html.P("Informe a data desejada:", style={"margin-top":"40px"}),
