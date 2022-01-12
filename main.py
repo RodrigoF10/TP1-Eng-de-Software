@@ -165,20 +165,20 @@ def plot_line_graph(plot_type, location):
         df_data_on_location = df_estados[(df_estados["estado"] == location)]
 
     bar_plots = ["casosNovos", "obitosNovos"]
-    fig2 = go.Figure(layout={"template":"plotly_dark"})
+    graf_barra = go.Figure(layout={"template":"plotly_dark"})
     if plot_type in bar_plots:
-        fig2.add_trace(go.Bar(x=df_data_on_location["data"], y=df_data_on_location[plot_type]))
+        graf_barra.add_trace(go.Bar(x=df_data_on_location["data"], y=df_data_on_location[plot_type]))
     else:
-        fig2.add_trace(go.Scatter(x=df_data_on_location["data"], y=df_data_on_location[plot_type]))
+        graf_barra.add_trace(go.Scatter(x=df_data_on_location["data"], y=df_data_on_location[plot_type]))
 
-    fig2.update_layout(
+    graf_barra.update_layout(
     paper_bgcolor="#242424",
     plot_bgcolor="#242424",
     autosize=True,
     margin=dict(l=10, r=10, t=10, b=10)
     )
 
-    return fig2
+    return graf_barra
 
 @app.callback(
     Output("choropleth-map", "figure"),
