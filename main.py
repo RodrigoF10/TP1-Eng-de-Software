@@ -30,7 +30,8 @@ estados_brasil = json.load(open("brazil_geo.json", "r"))
 
 #Instâncias
 
-app = dash.Dash(__name__,external_stylesheets=[dbc.themes.DARKLY])
+TEMA = "bootstrap.min.css"
+app = dash.Dash(__name__,external_stylesheets=[TEMA])
 
 mapa = px.choropleth_mapbox(
     df_estados_, locations="estado", color="casosNovos", center={"lat":-15.798298, "lon":-47.876145},
